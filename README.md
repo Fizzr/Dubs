@@ -19,7 +19,7 @@ As of now the UI takes form of a square box in the top right of any thread on 4c
 - Threads with no reply render a transparent background of the extension, as the extension steals its background colour from the reply class.  
 - When no results are returned the result containers become tiny boxes that are still visable due to the borders and background.  
 - The border doubles between resultContainer and searchContainer  
-- The entire .load() situation loading test.html (should change the name) feels like a hack.  
+- The entire $.get() situation loading test.html (should change the name) feels like a hack.  
 
 #Features to be added
 - Some mechanism of being able to find the next post of given criterea that is below the top of the screen. Alternatively this simply being shown in the list of results, where the screen is at. E.g. if in middle of roll thread, and OP requests number 8, find next 8 post under OP's, so that you don't find the first post on the page again.  
