@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+    #dubs
+    {
+    z-index: 1;
+    position: fixed;
+    top: 6px;
+    right: 6px;
+    width: 202px;
+    }
+    #UIContainer
+    {
+        position: relative;
+        width: 200px;
+        height: 60px;
+        border: 1px solid;
+        text-align: center;
+    }
+    .inUILow
+    {
+        position: absolute;
+        bottom: 10px;
+    }
+    .pillar
+    {
+        height: 15px;
+        width: 15px;
+        color: white;
+    }
+    #one
+    {
+        background-color: red;
+        left: 130px;
+    }
+    #two
+    {
+        background-color: forestgreen;
+        left: 155px;
+    }
+    #three
+    {
+        background-color: blue;
+        left: 180px;
+    }
+    #searchField
+    {
+        left: 10px;
+        width: 60px;
+        max-width: 60px;
+    }
+    #butt
+    {
+        left: 80px;
+        width: 40px;
+    }
+    #minimize
+    {
+        z-index: 2;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+    }
+    #resultContainer
+    {
+        float: right;
+        top: 60px;
+        right: 0px;
+        border: 1px solid;
+        border-top-color: transparent;
+        text-align: center;
+        padding: 4px;
+    }
+    #searchContainer
+    {
+        float: right;
+        border: solid 1px;
+        border-top-color: transparent;
+    }
+
+</style>
+</head>
+<body>
+<div id="dubs">
+    <a href="#"><img src="" id="minimize"></a>
+    <div id="UIContainer">
+        <div id="one" class="inUILow pillar">0</div>
+        <div id="two" class="inUILow pillar">0</div>
+        <div id="three" class="inUILow pillar">0</div>
+        <input type="text" id="searchField" class="inUILow">
+        <button id="butt" class="inUILow">Find</button>
+    </div>
+    <div id="resultContainer"></div>
+    <div id="searchContainer"></div>
+</div>
+</body>
+</html>

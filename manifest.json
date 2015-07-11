@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+
+	"name": "Getting started example",
+	"description": "My testing",
+	"version": "1.0",
+
+	"content_scripts": [
+    {
+		"matches": ["http://boards.4chan.org/*/thread/*"],
+		"js": ["jquery-2.1.4.js", "content_script.js"]
+    }],
+	"web_accessible_resources":
+		[
+			"resources/*"
+		]
+}
